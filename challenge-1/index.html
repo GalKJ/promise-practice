@@ -27,6 +27,13 @@
           console.log(light);
         });
       }
+
+      light('green')
+        .then(() => light('amber'))
+        .then(() => light('red'))
+        .then(() => light('amber'))
+        .then(() => light('green'))
+        .then(() => light('finished'));
     </script>
   </body>
 </html>
